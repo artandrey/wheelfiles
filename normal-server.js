@@ -6,7 +6,7 @@ const config = require('./config.json');
 const wheelOptions = config.wheelOptions;
 const PORT = 8080;
 const validator = require('validator');
-let phoneCollection = null;
+var phoneCollection = null;
 
 //connectiong to db hehe
 
