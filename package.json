@@ -1,0 +1,22 @@
+{
+  "name": "wheelfiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "normal-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artandrey/wheelfiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artandrey/wheelfiles/issues"
+  },
+  "homepage": "https://github.com/artandrey/wheelfiles#readme",
+  "dependencies": {
+    "nodemailer": "^6.4.17"
+  }
+}
