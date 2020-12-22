@@ -46,7 +46,7 @@ https.createServer(options, (req, res) => {
     if (req.url === '/lagrand') {
         console.log('lagrand!');
         if (req.method === 'POST') {
-            let buffer = '';
+            var buffer = '';
             req.on('data', chunk => {
                 buffer += chunk;
                 if (buffer.length > 1e6) { 
@@ -81,7 +81,7 @@ https.createServer(options, (req, res) => {
             // res.end(`{"optionIndex":3}`);
             // return;
         if (req.method === 'POST') {
-            let buffer = '';
+            var buffer = '';
             req.on('data', chunk => {
                 buffer += chunk;
                 if (buffer.length > 1e6) { 
