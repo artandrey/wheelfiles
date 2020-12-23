@@ -59,13 +59,12 @@ https.createServer(options, (req, res) => {
                     const data = JSON.parse(buffer);
                     console.log(data);
                     transporter.sendMail(data[0]).then(() => {
-                        console.log('Success')
-                        res.end('Success');
+                        console.log('Success');
                     }).catch(console.error) 
                     transporter.sendMail(data[1]).then(() => {
-                        console.log('Success')
-                        res.end('Success');
+                        console.log('Success');
                     }).catch(console.error) 
+                    res.end('Success');
                 }
                 catch (e) {
                         console.error(e);
