@@ -1,0 +1,1194 @@
+<?php
+function set_utm() {
+	if(isset($_GET["utm_source"])) setcookie("utm_source",$_GET["utm_source"],time()+900); 
+
+	if(isset($_GET["utm_medium"])) setcookie("utm_medium",$_GET["utm_medium"],time()+900); 
+
+	if(isset($_GET["utm_campaign"])) setcookie("utm_campaign",$_GET["utm_campaign"],time()+900); 
+
+	if(isset($_GET["utm_content"])) setcookie("utm_content",$_GET["utm_content"],time()+900); 
+
+	if(isset($_GET["utm_term"])) setcookie("utm_term",$_GET["utm_term"],time()+900);
+}
+set_utm();
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>CHANGAN купить в Екатеринбурге | Официальный дилер АВС-Моторс</title>
+   
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+    <link href="css/s_slider.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  <script type="text/javascript" src="https://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
+ 
+  
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+ 
+  
+   
+    <script type="text/javascript" src="js/index.js"></script>
+	<link href="css/ion.style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113078434-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113078434-9');
+
+  gtag('set', {'user_id': ''});
+</script>
+<script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=5217811417923584"></script>
+</head>
+
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(64617700, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/64617700" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+    <style>
+        [id*="timer-number-"][id*="-days"],
+        [id*="timer-number-"][id*="-hours"],
+        [id*="timer-number-"][id*="-minutes"],
+        [id*="timer-number-"][id*="-secundes"]
+        { position:relative; padding-bottom:17px;  }
+        
+        [id*="timer-number-"][id*="-days"]:before,
+        [id*="timer-number-"][id*="-hours"]:before,
+        [id*="timer-number-"][id*="-minutes"]:before,
+        [id*="timer-number-"][id*="-secundes"]:before
+        {
+        	content:'Дней'; 
+        	z-index:1; 
+        	position:absolute; 
+        	left:0px; bottom:10px; 
+        	font-size:12px; 
+        	color:white; 
+        	width:100%; text-align:center;
+        }
+        
+        [id*="timer-number-"][id*="-hours"]:before
+        { content:'Часов'; }
+        [id*="timer-number-"][id*="-minutes"]:before
+        { content:'Минут'; }
+        [id*="timer-number-"][id*="-secundes"]:before
+        { content:'Секунд'; }
+        
+        [id*="timer-text-"][id*="-days"],
+        [id*="timer-text-"][id*="-hours"],
+        [id*="timer-text-"][id*="-minutes"],
+        [id*="timer-text-"][id*="-secundes"]
+        { display:none !important; }
+        
+        .timer-flipchart-inner:before { display:none; }
+        
+        .col2>[id*="timer"]
+        {
+        	/*transform:scale(0.7);*/
+        	transform-origin:bottom left;
+        	/*padding-top:30px;*/
+        }
+        
+        @media (max-width: 576px)
+        {
+        	.col2>[id*="timer"]
+        	{
+        		/*transform:scale(0.5);
+        		transform-origin:top left;*/
+            transform: scale(0.7) !important;
+            transform-origin: top center;
+            /*padding-left: 270px;*/
+            padding-bottom: 4px;
+        	}
+        
+        	[id*="timer-number-"][id*="-days"]:before,
+        	[id*="timer-number-"][id*="-hours"]:before,
+        	[id*="timer-number-"][id*="-minutes"]:before,
+        	[id*="timer-number-"][id*="-secundes"]:before
+        	{
+        		color:black; 
+        	}
+        }
+    </style>
+
+
+
+    <header>
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="logo2"><img src="img/logo2.png" /></div>
+            <div class="addr_container">
+                <a class="top_phone" href="tel:+73432878787">+7 (343) 287-87-87</a>
+                <div class="addr">Первый официальный дилер в Екатеринбурге</div>
+            </div>
+            <a class="popup btn" href="#form_popup" data-title="Перезвоните мне" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="CHANGAN AVS Motors"><span>Перезвоните мне</span></a>
+        </div>
+    </header>
+
+    <div class="dist_block">
+        <div class="container">
+            <img src="img/dist_img.png">
+            <span><b>АВС-Моторс заботится о вас!</b> В дилерском центре приняты все меры для обеспечения вашей безопасности.<br> Просто звоните нам - наш менеджер обговорит все условия. Берегите себя!</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title_container">
+
+
+            <!--
+		
+			<div class='title1'>
+				<span>ВПЕРВЫЕ!</span> Акция в поддержку покупателей!<br>
+				C <span>14</span> по <span>31</span> марта <span>ДНИ УДАРНЫХ ПРЕДЛОЖЕНИЙ!</span><br>
+
+			</div>
+	-->
+
+            <div class='title1'>
+                <span>ФИНАЛ ПРОДАЖ 2020</span> у оф. дилера CHANGAN в Челябинске.<br/> 
+Только до <span>31</span> декабря успейте купить а/м с максимальной <span>выгодой до 180 000р.</span> + подарки!<br> 
+            </div>
+
+            <div class="title1_comment">
+         Акция проводится у<br>официального дилера CHANGAN!<br>
+         <br>
+                <span>Подробности о проведении<br> акции узнайте по телефону!</span>
+            </div>
+
+
+        </div>
+    </div>
+    <ul class="large_photos">
+        <li class="current"></li>
+    </ul>
+    <div class="container">
+        <form id="form1" action="order.php" method="POST" class="CKiForm" data-callkeeper_name="Получить предложение" data-flash-title="Получить предложение">
+            <input name="title" type="hidden" value="Получить предложение">
+            <input name="comment" type="hidden" value="">
+            <input name="form_name" type="hidden" value="zakaz_zvonka">
+            <input name="form_type_model_name" type="hidden" value="">
+            <input name="form_diler" type="hidden" value="CHANGAN AVS Motors">
+            <div class="form-group ico_phone">
+                
+				<input type="text" id="phone1"  name="phone" required=""   class="nacc form-control" placeholder="Введите телефон" data-callkeeper_ignore="" data-flash="phone">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-control  CKFormTrigger btn FlashFormSubmit">Узнать цену в дни акции</button>
+            </div>
+            <label class="agree_field"><input type="checkbox" name="agree" value="1" checked="checked">Я согласен на <a target="_blank" href="https://www.avsmotors.ru/soglasie/">обработку персональных данных</a> в соответствии с <a target="_blank" href="https://www.avsmotors.ru/soglasie/">политикой конфиденциальности</a></a></label>
+        </form>
+    </div>
+
+    <script>
+        /*$(function(){
+        			$('.small_photos li a').click(function()
+        			{
+        				$('.small_photos li').removeClass('current');
+        				$('.large_photos li').removeClass('current');
+        				var _parent = $(this).closest("li");
+        				var _index = $(".small_photos li").index(_parent);
+        				$(_parent).addClass("current");
+        				$('.large_photos li:eq('+_index+')').addClass("current");
+        				return false;
+        			});			
+        			var timerId = setInterval(function() {photos_switch()}, 2000);
+        		});
+        		function photos_switch()
+        		{
+        			var _index = $('.small_photos li.current').index('.small_photos li');
+        			var _count = $('.small_photos li').length;
+        			if (_index == (_count - 1)) _index = 0; else _index++;
+        			console.log(_index);
+        			$('.small_photos li:eq('+_index+') a').click();
+        		}*/
+    </script>
+
+
+    <div class="container new_block2">
+        <div class="cont_2_col">
+            <div class="col1">
+            </div>
+            <div class="col2">
+                <div class="title">До конца акции осталось!</div>
+                <!--				<script src="//megatimer.ru/get/beed646335cbf21bf35fe0357c776682.js"></script>-->
+                <!--script src="//megatimer.ru/get/c2899ec0e4065317296d6e58931829d6.js"></script-->
+                <!--script src="//megatimer.ru/get/386a46b83e03149808ada897c42e0ed9.js"></script-->
+              <script src="//megatimer.ru/get/7d63fef9f164a0e09a4e7c573ffe7c33.js"></script>
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg_grey">
+        <div class="container">
+            <ul class="advantages">
+                <li>
+                    <a class="popup" href="#form_popup" data-title="Официальный дилер" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="CHANGAN AVS Motors">
+						<span class="title">Официальный<br/> дилер</span>
+						<span class="text">АВС-Моторс - официальный дилер в Екатеринбурге, Челябинске и Касли</span>
+					</a>
+                </li>
+                <li>
+                    <a class="popup" href="#form_popup" data-title="Спецусловия кредитования" data-comment="" data-form_name="credit" data-form_type_model_name="" data-form_diler="CHANGAN AVS Motors">
+						<span class="title">Спецусловия<br/> кредитования</span>
+						<span class="text">Подберем для Вас лучшие условия кредиования и оформим покупку в этот же день.</span>
+					</a>
+                </li>
+                <li>
+                    <a class="popup" href="#form_popup" data-title="Выгодный trade-in" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="CHANGAN AVS Motors">
+						<span class="title">Выгодный<br/> trade-in</span>
+						<span class="text">Вы сможете уехать на новом автомобиле в день обращения и получить максимальную цену за свой автомобиль!</span>
+					</a>
+                </li>
+                <li>
+                    <a class="popup" href="#form_popup" data-title="Все комплектации в наличии" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="CHANGAN AVS Motors">
+						<span class="title">Все комплектации<br/> в наличии</span>
+						<span class="text">Вам не придется ждать заказанного автомобиля с завода!</span>
+					</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--<div class="container">
+		<div class="banner">
+			<div class="title">Отправьте заявку с этого сайта и получите <span>Карту помощи на дорогах</span><span>в подарок! <sup>5</sup></span></div>
+			<img src="img/car.png"/>
+			<a class="popup btn" href="#form_popup"
+				data-title="Получить подарок"
+				data-comment=""
+				data-form_name="zakaz_zvonka_fancybox"
+				data-form_type_model_name=""
+				data-form_diler="CHANGAN AVS Motors">
+				<span>Получить подарок</span>
+			</a>
+		</div>
+	</div>-->
+
+
+    <!--div class="container new_block">
+		<div class="cont_2_col">
+			<div class="col1">
+				<div class="title">При покупке КАСКО<br/><span>СКИДКА  20 000 руб. на сигнализацию!<sup>8</sup></span></div>
+			</div>
+			<div class="col2">
+				<a class="popup btn" href="#form_popup"
+						data-title="Получить скидку"
+						data-comment=""
+						data-form_name="credit"
+						data-form_type_model_name=""
+						data-form_diler="CHANGAN AVS Motors">
+						<span>Получить скидку</span>
+				</a>
+			</div>
+		</div>
+	</div-->
+
+
+    <!--<div class="container">
+	<div class="new_block3">
+		<div class="col1">
+			<img src="img/new3_image.png">
+			<div class="title">
+				Выездной<br>ТЕСТ-ДРАЙВ<sup>8</sup>
+			</div>
+		</div>
+		<div class="col2">
+Нет времени чтобы посетить автосалон?<br>
+Новая акция - Выездной ТЕСТ-ДРАЙВ<br>
+<span>Абсолютно бесплатно приедем к вам!</span>
+		</div>
+		<a class="popup btn" href="#form_popup"
+			data-title="Записаться"
+			data-comment=""
+			data-form_name="zakaz_zvonka_fancybox"
+			data-form_type_model_name=""
+			data-form_diler="CHANGAN AVS Motors">
+			Записаться
+		</a>
+	</div>
+	</div>-->
+
+
+    <!-- <div class="container">
+		<div class="banner">
+			<div class="title"><span>Новый CS75 1,8 AT COMFORT</span> <span>доступен к заказу</span></div>
+			<img src="img/car.png"/>
+			<a class="popup btn" href="#form_popup"
+				data-title="Новый CS75 1,8 AT COMFORT доступен к заказу"
+				data-comment=""
+				data-form_name="zakaz_zvonka_fancybox"
+				data-form_type_model_name=""
+				data-form_diler="CHANGAN AVS Motors">
+				<span>Заказать</span>
+			</a>
+		</div>
+	</div> -->
+
+    <div class="container">
+        <div class="new_block3">
+            <div class="col1">
+                <img src="img/new3_X40.png">
+                <div class="title">
+           	CS35 Plus -<br>АВТОМОБИЛЬ МЕСЯЦА
+				</div>
+			</div>
+			<div class="col2">
+				Максимально выгодные условия на CHANGAN CS35 Plus<br>
+				<span>Уникальная цена только в эти дни!</span>
+            </div>
+            <a class="popup btn" href="#form_popup" data-title="УЗНАТЬ СПЕЦ. ЦЕНУ" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="CHANGAN AVS Motors">
+				УЗНАТЬ СПЕЦ. ЦЕНУ
+			</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <ul class="cars_items">
+            <li id="CS35" data-car="CS35" scrollid="CS35" class="border">
+                <div>
+                    <div class="title">CHANGAN CS35</div>
+                    <div class="sale_div"></div>
+                    <a class="image anchor" href="#tb_complects" data-title="Новая CHANGAN CS35" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="Новая CS35" data-form_diler="CHANGAN AVS Motors">
+						<img src="img/355.png"/>
+					</a>
+                    <!--a class="popup vigoda" href="#form_popup"
+						data-title="Карта помощи на дороге в подарок!"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="Новая CS35"
+						data-form_diler="CHANGAN AVS Motors">
+						В кредит дешевле!<br/> Выгода на автомобиль при приобретении<br/> в кредит до 50 000 руб!
+					</a-->
+                    <a class="popup credit" href="#form_popup" data-title="От 799 000 рублей" data-comment="" data-form_name="credit" data-form_type_model_name="Новая CS35" data-form_diler="CHANGAN AVS Motors">
+						От 799 000 рублей
+					</a>
+                </div>
+                <div class="btns">
+                    <a class="popup btn grey" href="#form_popup" data-title="Узнать цену" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="Новая CS35" data-form_diler="CHANGAN AVS Motors">
+						<span>Узнать цену</span>
+					</a>
+                    <a class="popup btn" href="#form_popup" data-title="Выгода до 100 000 руб.* в дни распродажи!" data-comment="" data-form_name="credit" data-form_type_model_name="Новая CS35" data-form_diler="CHANGAN AVS Motors">
+						<span>Выгода до 70 000 руб.*<br>в дни распродажи!</span>
+					</a>
+                    <a class="btn white filter anchor" href="#tb_complects" data-title="Подобрать комплектацию" data-car="CS35" data-comment="" data-form_name="credit" data-form_type_model_name="Новая CS35" data-form_diler="CHANGAN AVS Motors">
+						<span>Подобрать комплектацию</span>
+					</a>
+                </div>
+            </li>
+            <li id="CS35 Plus" scrollid="CS35 Plus" class="border">
+                <div>
+                    <div class="title">CHANGAN CS35 Plus</div>
+                    <div class="sale_div"></div>
+                    <a class="image anchor" href="#tb_complects" data-title="Получить выгоды" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS35 Plus" data-form_diler="CHANGAN AVS Motors">
+						<img src="img/35.png"/>
+					</a>
+                    <!--a class="popup vigoda" href="#form_popup"
+						data-title="Выгода до 250 000 р.!* + 2 года обслуживания в подарок********"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="CS35 Plus"
+						data-form_diler="CHANGAN AVS Motors">
+						Выгода до 250 000 р.!*<br/> + 2 года обслуживания в подарок********
+					</a-->
+                    <a class="popup credit" href="#form_popup" data-title="от 1 109 000 рублей" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus" data-form_diler="CHANGAN AVS Motors">
+						от 1 239 000 рублей
+					</a>
+                </div>
+                <div class="btns">
+                    <a class="popup btn grey" href="#form_popup" data-title="Узнать цену" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS35 Plus" data-form_diler="CHANGAN AVS Motors">
+						<span>Узнать цену</span>
+					</a>
+                    <a class="popup btn" href="#form_popup" data-title="Выгода до 250 000 руб.* в дни распродажи!" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT" data-form_diler="CHANGAN AVS Motors">
+						<span>Выгода до 40 000 руб.*<br>в дни распродажи!</span>
+					</a>
+                    <!--a class="popup btn" href="#form_popup"
+						data-title="Рассчитать кредит со ставкой 5,5%<sup>4</sup>"
+						data-comment=""
+						data-form_name="credit"
+						data-form_type_model_name="CS35 Plus"
+						data-form_diler="CHANGAN AVS Motors">
+						<span>Рассчитать кредит со ставкой 5,5%<sup>4</sup></span>
+					</a-->
+                    <a class="btn white filter anchor" href="#tb_complects" data-title="Подобрать комплектацию" data-car="CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus" data-form_diler="CHANGAN AVS Motors">
+						<span>Подобрать комплектацию</span>
+					</a>
+                </div>
+           </li>
+            <li id="prado" scrollid="lc150" class="border">
+                <div>
+                     <div class="title">CHANGAN CS55</div>
+                    <div class="sale_div"></div>
+                    <a class="image anchor" href="#tb_complects" data-title="Получить выгоды" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS55" data-form_diler="CHANGAN AVS Motors">
+						<img src="img/car.png"/>
+					</a>
+                    <!--a class="popup vigoda" href="#form_popup"
+						data-title="Выгода до 100 000 руб.!*"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="Новый PRADO"
+						data-form_diler="CHANGAN AVS Motors">
+						Выгода до 100 000 руб.!*
+					</a-->
+                     <a class="popup credit" href="#form_popup" data-title="Кредит от 453 рубдень<sup>3</sup>" data-comment="" data-form_name="credit" data-form_type_model_name="CS55" data-form_diler="CHANGAN AVS Motors">						
+					от 1 329 900 рублей
+					</a>
+                </div>
+                <div class="btns">
+                    <a class="popup btn grey" href="#form_popup" data-title="Узнать цену" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS55" data-form_diler="CHANGAN AVS Motors">
+						<span>Узнать цену</span>
+					</a>
+                    <a class="popup btn" href="#form_popup" data-title="Выгода до 150 000 руб.* в дни распродажи!" data-comment="" data-form_name="credit" data-form_type_model_name="CS55" data-form_diler="CHANGAN AVS Motors">
+						<span>Выгода <br/> до 150 000 рублей!</span>
+					</a>
+                    <a class="btn white filter anchor" href="#tb_complects" data-title="Подобрать комплектацию" data-car="lc150" data-comment="" data-form_name="credit" data-form_type_model_name="CS55" data-form_diler="CHANGAN AVS Motors">
+						<span>Подобрать комплектацию</span>
+					</a>
+                 </div>
+           </li>
+            <li id="prado" scrollid="CS75" class="border">
+                <div>
+                     <div class="title">CHANGAN CS75</div>
+                    <div class="sale_div"></div>
+                    <a class="image anchor" href="#tb_complects" data-title="Получить выгоды" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75" data-form_diler="CHANGAN AVS Motors">
+						<img src="img/red1.png"/>
+					</a>
+                    <!--a class="popup vigoda" href="#form_popup"
+						data-title="Выгода до 100 000 руб.!*"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="Новый PRADO"
+						data-form_diler="CHANGAN AVS Motors">
+						Выгода до 100 000 руб.!*
+					</a-->
+                     <a class="popup credit" href="#form_popup" data-title="Кредит от 453 рубдень<sup>3</sup>" data-comment="" data-form_name="credit" data-form_type_model_name="CS75" data-form_diler="CHANGAN AVS Motors">						
+					от 1 219 900 рублей
+					</a>
+                </div>
+                <div class="btns">
+                    <a class="popup btn grey" href="#form_popup" data-title="Узнать цену" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75" data-form_diler="CHANGAN AVS Motors">
+						<span>Узнать цену</span>
+					</a>
+                    <a class="popup btn" href="#form_popup" data-title="Выгода до 300 000 руб.* в дни распродажи!" data-comment="" data-form_name="credit" data-form_type_model_name="CS75" data-form_diler="CHANGAN AVS Motors">
+						<span>Выгода <br/> до 100 000 рублей!</span>
+					</a>
+                    <a class="btn white filter anchor" href="#tb_complects" data-title="Подобрать комплектацию" data-car="CS75" data-comment="" data-form_name="credit" data-form_type_model_name="CS75" data-form_diler="CHANGAN AVS Motors">
+						<span>Подобрать комплектацию</span>
+					</a>
+                 </div>
+           </li>
+            <li id="prado" scrollid="lc150" class="border">
+                <div>
+                     <div class="title">CHANGAN CS75FL</div>
+                    <div class="sale_div"></div>
+                    <a class="image anchor" href="#tb_complects" data-title="Получить выгоды" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75FL" data-form_diler="CHANGAN AVS Motors">
+						<img src="img/black1.png"/>
+					</a>
+                    <!--a class="popup vigoda" href="#form_popup"
+						data-title="Выгода до 100 000 руб.!*"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="Новый PRADO"
+						data-form_diler="CHANGAN AVS Motors">
+						Выгода до 100 000 руб.!*
+					</a-->
+                     <a class="popup credit" href="#form_popup" data-title="Кредит от 453 рубдень<sup>3</sup>" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL" data-form_diler="CHANGAN AVS Motors">						
+					от 1 559 900 рублей
+					</a>
+                </div>
+                <div class="btns">
+                    <a class="popup btn grey" href="#form_popup" data-title="Узнать цену" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75FL" data-form_diler="CHANGAN AVS Motors">
+						<span>Узнать цену</span>
+					</a>
+                    <a class="popup btn" href="#form_popup" data-title="Выгода до 300 000 руб.* в дни распродажи!" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL" data-form_diler="CHANGAN AVS Motors">
+						<span>Выгода <br/> до 40 000 рублей!</span>
+					</a>
+                    <a class="btn white filter anchor" href="#tb_complects" data-title="Подобрать комплектацию" data-car="CS75FL" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL" data-form_diler="CHANGAN AVS Motors">
+						<span>Подобрать комплектацию</span>
+					</a>
+                </div>
+            </li>
+           
+           
+           
+            <!--
+			<li id="highlander"  scrollid="highlander">
+				<div>
+					<div class="title">HIGHLANDER</div>
+					<div class="sale_div"></div>
+					<a class="image anchor" href="#tb_complects"
+						data-title="Получить выгоды"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="HIGHLANDER"
+						data-form_diler="CHANGAN AVS Motors">
+						<img src="img/highlander.png"/>
+					</a>
+					<a class="popup credit" href="#form_popup"
+						data-title="Кредит от 610 рубдень<sup>3</sup>"
+						data-comment=""
+						data-form_name="credit"
+						data-form_type_model_name="HIGHLANDER"
+						data-form_diler="CHANGAN AVS Motors">
+						Кредит от 610 рубдень<sup>3</sup>
+					</a>
+				</div>
+				<div class="btns">
+					<a class="popup btn grey" href="#form_popup"
+						data-title="Узнать цену"
+						data-comment=""
+						data-form_name="zakaz_zvonka_fancybox"
+						data-form_type_model_name="HIGHLANDER"
+						data-form_diler="CHANGAN AVS Motors">
+						<span>Узнать цену</span>
+					</a>
+					<a class="popup btn" href="#form_popup"
+						data-title="Выгода до 500 000 руб.* в дни распродажи!"
+						data-comment=""
+						data-form_name="credit"
+						data-form_type_model_name="HIGHLANDER"
+						data-form_diler="CHANGAN AVS Motors">
+						<span>Выгода до 500 000 руб.* <br>в дни распродажи!</span>
+					</a>
+					<a class="btn white filter anchor" href="#tb_complects"
+						data-title="Подобрать комплектацию" data-car="highlander"
+						data-comment=""
+						data-form_name="credit"
+						data-form_type_model_name="HIGHLANDER"
+						data-form_diler="CHANGAN AVS Motors">
+						<span>Подобрать комплектацию</span>
+					</a>
+				</div>
+			</li>
+-->
+          
+          
+          
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="tradein_title">
+            Выгодный обмен вашего <br> автомобиля на новый CHANGAN
+        </div>
+    </div>
+
+    <div class="bg_tradein">
+        <div class="container">
+            <div class="tradein_container">
+                <form id="form-tradein" action="order.php" method="POST" class="CKiForm" data-callkeeper_name="ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ ДОПОЛНИТЕЛЬНУЮ ВЫГОДУ" data-flash-title="ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ ДОПОЛНИТЕЛЬНУЮ ВЫГОДУ">
+                    <input name="title" type="hidden" value="ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ ДОПОЛНИТЕЛЬНУЮ ВЫГОДУ">
+                    <input name="comment" type="hidden" value="">
+                    <input name="form_name" type="hidden" value="">
+                    <input name="form_type_model_name" type="hidden" value="">
+                    <input name="form_diler" type="hidden" value="">
+                    <div class="columns">
+                        <div class="form-group">
+                            <select name="marka" class="form-control">
+							<option value="">Выбрать марку</option>					
+							<option data-hurl='audi' value='Audi'>Audi</option><option data-hurl='bmw' value='BMW'>BMW</option><option data-hurl='cadillac' value='Cadillac'>Cadillac</option><option data-hurl='chery' value='Chery'>Chery</option><option data-hurl='chevrolet' value='Chevrolet'>Chevrolet</option><option data-hurl='citroen' value='Citroen'>Citroen</option><option data-hurl='daewoo' value='Daewoo'>Daewoo</option><option data-hurl='datsun' value='Datsun'>Datsun</option><option data-hurl='fiat' value='Fiat'>Fiat</option><option data-hurl='ford' value='Ford'>Ford</option><option data-hurl='great_wall' value='Great Wall'>Great Wall</option><option data-hurl='honda' value='Honda'>Honda</option><option data-hurl='hyundai' value='Hyundai'>Hyundai</option><option data-hurl='infiniti' value='Infiniti'>Infiniti</option><option data-hurl='jaguar' value='Jaguar'>Jaguar</option><option data-hurl='jeep' value='Jeep'>Jeep</option><option data-hurl='kia' value='Kia'>Kia</option><option data-hurl='lada' value='LADA'>LADA</option><option data-hurl='land_rover' value='Land Rover'>Land Rover</option><option data-hurl='lexus' value='Lexus'>Lexus</option><option data-hurl='lifan' value='Lifan'>Lifan</option><option data-hurl='mazda' value='Mazda'>Mazda</option><option data-hurl='mercedes_benz' value='Mercedes-Benz'>Mercedes-Benz</option><option data-hurl='mini' value='Mini'>Mini</option><option data-hurl='nissan' value='Nissan'>Nissan</option><option data-hurl='opel' value='Opel'>Opel</option><option data-hurl='peugeot' value='Peugeot'>Peugeot</option><option data-hurl='renault' value='Renault'>Renault</option><option data-hurl='seat' value='SEAT'>SEAT</option><option data-hurl='skoda' value='Skoda'>Skoda</option><option data-hurl='smart' value='Smart'>Smart</option><option data-hurl='ssangyong' value='SsangYong'>SsangYong</option><option data-hurl='subaru' value='Subaru'>Subaru</option><option data-hurl='suzuki' value='Suzuki'>Suzuki</option><option data-hurl='CHANGAN' value='CHANGAN'>CHANGAN</option><option data-hurl='volkswagen' value='Volkswagen'>Volkswagen</option><option data-hurl='volvo' value='Volvo'>Volvo</option><option data-hurl='r_r_r_r_r_r_' value='Р‘РѕРіРґР°РЅ'>Р‘РѕРіРґР°РЅ</option><option data-hurl='r_r_r_' value='Р’РРЎ'>Р’РРЎ</option><option data-hurl='r_r_r_' value='Р“РђР—'>Р“РђР—</option><option data-hurl='r_r_c_rier_rec_' value='РњРѕСЃРєРІРёС‡'>РњРѕСЃРєРІРёС‡</option><option data-hurl='r_c_r_c_rer__r_r_c_r_' value='РџСЂРѕС‡РёРµ Р°РІС‚Рѕ'>РџСЂРѕС‡РёРµ Р°РІС‚Рѕ</option><option data-hurl='r_r_r_' value='РЈРђР—'>РЈРђР—</option>								</select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="year" class="form-control" placeholder="Год выпуска">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required="" class="nacc form-control" placeholder="Ваш телефон" data-callkeeper="tel" data-flash="phone" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control  CKFormTrigger btn FlashFormSubmit"><span>Получить расчет</span></button>
+                        </div>
+                    </div>
+                    <label class="agree_field"><input type="checkbox" name="agree" value="1" checked="checked">Согласие на <a target="_blank" href="https://www.avsmotors.ru/soglasie/">обработку персональных данных</a></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var _models = {"audi":["100","200","4000","50","5000","80","90","A1","A2","A3","A4","A5","A6","A7","A8","Allroad","Cabriolet","Coupe","Coupe S","F103","Fox","Q2","Q3","Q5","Q7","Quattro","R8","RS 3","RS 4","RS 5","RS 6","RS 7","RS Q3","RS2 Avant","S1","S2","S3","S4","S5","S6","S7","S8","SQ5","SQ7","TT","V8 (D11)"],"bmw":["1 \u0441\u0435\u0440\u0438\u044f","1M","2 \u0441\u0435\u0440\u0438\u044f","2 \u0441\u0435\u0440\u0438\u044f Active Tourer","3 \u0441\u0435\u0440\u0438\u044f","4 \u0441\u0435\u0440\u0438\u044f","5 \u0441\u0435\u0440\u0438\u044f","6 \u0441\u0435\u0440\u0438\u044f","7 \u0441\u0435\u0440\u0438\u044f","8 \u0441\u0435\u0440\u0438\u044f","i3","i8","M1","M2","M3","M4","M5","M6","X1","X3","X4","X5","X5 M","X6","X6 M","Z1","Z3","Z3 M","Z4","Z4 M","Z8"],"cadillac":["Allante","ATS","BLS","Brougham","Calais","Catera","CT6","CTS","De Ville","DTS","Eldorado","ELR","Escalade","Fleetwood","Series 61","Series 62","Series 70","Seville","SLS","SRX","STS","XLR","XT5","XTS"],"chery":["Amulet","Arauca","Arrizo 7","Bonus","Cowin","CrossEastar","E5","Eastar","Ego","Elara","Face","Fengyun","Flagcloud","Fora","Fulwin","Fulwin 2","IndiS","J1","J11","Jaggi","Karry","Kimo","M11","Oriental Son","Qiyun","QQ","QQ3","QQ6","Riich 2","Storm 2","Tiggo","Tiggo 2","Tiggo 3","Tiggo 5","Tiggo 7","Very","Windcloud"],"chevrolet":["150","1700","210","400","Agile","Alero","Astra","Astro","Avalanche","Aveo","Beat","Bel Air","Beretta","Biscayne","Blazer","C\/K","Calibra","Camaro","Caprice","Captiva","Cavalier","Celebrity","Celta","Chevelle","Chevette","Chevy II","Chevy Van","Citation","City Express","Classic","Cobalt","Colorado","Combo","Commodore","Corsa","Corsica","Corvair","Corvette","Cruze","D20","Delray","Deluxe","El Camino","Enjoy","Epica","Equinox","Evanda","Express","Fleetline","Forester","Grand Vitara","HHR","Impala","Ipanema","Jimny","Kadett","Kalos","Kommando","Lacetti","Lanos","Lova","Lumina","Lumina APV","LUV D-MAX","Malibu","Matiz","Meriva","Metro","Montana","Monte Carlo","Monza","MW","N200","N300","Niva","Nova","Nubira","Omega","Onix","Opala","Optra","Orlando","Prisma","Prizm","Rezzo","S-10","Sail","Samurai","Senator","Silverado","Sonic","Sonora","Spark","Spectrum","Spin","Sprint","SS","SSR","Stylemaster","Suburban","Swift","Tacuma","Tahoe","Task Force","Tavera","Tornado","Tracker","TrailBlazer","Trans Sport","Traverse","Trooper","Uplander","Utility","Van","Vectra","Vega","Venture","Veraneio","Vitara","Viva","Vivant","Volt","Zafira"],"citroen":["2 CV","Acadiane","Ami","AX","Axel","Berlingo","Bijou","BX","C1","C15","C2","C25","C3","C3 AirCross","C3 Picasso","C35","C4","C4 AirCross","C4 Cactus","C4 L","C4 Picasso","C5","C5 AirCross","C6","C8","C-Crosser","C-Elysee","Chanson","C-Quatre","C-Triomphe","CX","C-Zero","Dispatch","DS","DS3","DS4","DS5","Dyane","Evasion","Fukang","GS","H Van","ID","Jumper","Jumpy","LN","Mehari","Nemo","Relay","Saxo","SM","SpaceTourer","Synergie","Visa","Xantia","XM","Xsara","Xsara Picasso","ZX"],"daewoo":["Alpheon","Aranos","Arcadia","Brougham","Chairman","Cielo","Damas","Espero","Evanda","Fantasy","G2X","Gentra","Imperial","Kalos","Korando","Labo","Lacetti","Lanos","Leganza","LeMans","Maepsy","Magnus","Matiz","Musso","Nexia","Nubira","Pointer","Prince","Racer","Rezzo","Royale","Sens","Tacuma","Tico","Tosca","Veritas","Winstorm"],"datsun":["1000","1200","200SX","240Z \/ 260Z \/ 280Z","510","610","710","810","B-210","Bluebird","Cablight","Cabstar","Cherry","Fairlady","GO","GO Plus","Laurel","mi-Do","on-DO","Patrol","Pickup","Stanza","Sunny","Urvan"],"fiat":["1100","1200","124","125","126","127","128","130","1300\/1500","131","132","133","1400","147","1800\/2100","2300","238","241","242","500","500L","600","850","Albea","Argenta","Barchetta","Brava","Bravo","Brio","Campagnola","Cinquecento","Coupe","Croma","Daily","Dino","Doblo","Ducato","Duna","Elba","Fiorino","Freemont","Fullback","Idea","Linea","Marea","Marengo","Mille","Multipla","Palio","Panda","Panorama","Perla","Pratico","Premio","Punto","Qubo","Regata","Ritmo","Scudo","Sedici","Seicento","Siena","Spazio","Stilo","Strada","Talento","Tempra","Tipo","Tucan","Ulysse","Uno","Viaggio","Vivace","Weekend","X1\/9"],"ford":["Aerostar","Anglia","Aspire","Bantam","Bronco","Bronco II","Capri","C-Max","Comete","Consul","Contour","Corcel","Corsair","Cortina","Cougar","Courier","Crown Victoria","Del Rey","Durango","Econoline","Econovan","EcoSport","Edge","Elite","Escape","Escort","E-series","Everest","Excursion","EXP","Expedition","Explorer","Explorer Sport Trac","F-450","Fairlane","Fairmont","Falcon","Festiva","Fiesta","Figo","Five Hundred","Flex","Focus","Freda","Freestar","Freestyle","F-Series","Fusion","Galaxie","Galaxy","GPW","Granada","Grand C-Max","GT","GT40","Ikon","Ixion","Ka","Kuga","Laser","Lobo","LTD II","M151","Mainline","Maverick","Model A","Mondeo","Mustang","Orion","Pampa","Pilot","Pinto","Popular","Prefect","Probe","Puma","Ranchero","Ranger","Scorpio","Shelby","Sierra","S-Max","Taunus","Taurus","Taurus X","Telstar","Tempo","Territory","Thunderbird","Torino","Tourneo","Tourneo Connect","Tourneo Custom","Transit","Transit Connect","Transit Custom","Vedette","Verona","Windstar","Zephyr","Zodiac"],"great_wall":["CoolBear","Cowry","Deer","Florid","H3","H5","H6","Hover","M2","M4","Pegasus","Peri","Safe","Sailor","Sing RUV","Socool","Steed","Voleex C10","Voleex C20R","Voleex C30","Voleex C50","Voleex V80","Wingle 3","Wingle 5","X240"],"honda":["1300","145","Accord","Acty","Airwave","Amaze","Ascot","Ascot Innova","Avancier","Ballade","Beat","Brio","Capa","Ciimo","City","Civic","Concerto","Crider","Crossroad","Crosstour","CR-V","CR-X","CR-Z","Domani","Edix","Element","Elysion","FCX Clarity","Fit","Fit Aria","Fit Shuttle","Freed","FR-V","HR-V","Insight","Inspire","Integra","Integra SJ","Jazz","Lagreat","Legend","Life","Logo","MDX","Mobilio","Mobilio Spike","MR-V","N Box","N360","N600","N-One","NSX","Odyssey","Orthia","Partner","Passport","Pilot","Prelude","Quint","Quintet","Rafaga","Ridgeline","S2000","S500","S600","S800","Saber","Shuttle","S-MX","Spirior","Stepwgn","Stream","That's","Today","Torneo","Vamos","Vigor","Z","Zest"],"hyundai":["Accent","Amica","Aslan","Atos","Atos Prime","Atoz","Avante","Avega","Azera","Bakkie","Brio","Centennial","Click","Coupe","Creta","Dynasty","Elantra","Elantra GT","Elantra Touring","Entourage","Eon","Equus","Excel","Galloper","Genesis","Getz","Grace","Grand Avega","Grandeur","H-1","H200","H300","HB20","HD35","HD65","HD72","HD75","HD78","HR","i10","i20","i25","i30","i40","i45","iLoad","ix20","ix35","ix55","Kona","Langdong","Lantra","Lavita","Marcia","Matrix","Mighty","NF","Pony","Porter","Presto","Rohens","Santa Fe","Santamo","Santro","Santro Xing","S-Coupe","Shehzore","Solaris","Sonata","Sonica","Stellar","TB","Terracan","Tiburon","TQ","Trajet","Trajet XG","Tucson","Tuscani","Veloster","Veracruz","Verna","XG"],"infiniti":["EX-Series","FX-Series","G-Series","I-Series","J30","JX-Series","M-Series","Q30","Q40","Q45","Q50","Q60","Q70","QX30","QX50","QX60","QX70","QCS75 1,8 AT COMFORT","QX-Series"],"jaguar":["240\/340","420","E-Pace","E-Type","F-Pace","F-Type","Mark","SS","S-Type","XE","XF","XJ","XJS","XK","X-Type"],"jeep":["2500","Cherokee","CJ","Comanche","Commander","Commando","Compass","Gladiator","Grand Cherokee","Liberty","Patriot","Renegade","Wagoneer","Wrangler"],"kia":["Amanti","Avella","Besta","Bongo","Borrego","Brisa","Cadenza","Capital","Carens","Carnival","Carstar","Cee'd","Cerato","Clarus","Concord","Credos","Elan","Enterprise","Forte","Joice","K2","Lotze","Magentis","Mohave","Morning","Niro","Opirus","Optima","Parktown","Picanto","Potentia","Pregio","Pride","Quoris","Ray","Retona","Rio","Rondo","Sedona","Sephia","Shuma","Sorento","Soul","Spectra","Sportage","Stinger","Stonic","Towner","Venga","Visto","X-Trek"],"lada":["1111 \u041e\u043a\u0430","2101","2102","2103","2104","2105","2106","2107","2108","2109","21099","2110","2111","2112","2113","2114","2115","2120 \u041d\u0430\u0434\u0435\u0436\u0434\u0430","2123","4x4","Granta","Kalina","Largus","Priora","Vesta","XRAY"],"land_rover":["Defender","Discovery","Discovery Sport","Freelander","Range Rover","Range Rover Evoque","Range Rover Sport","Range Rover Velar","Series"],"lexus":["CT","ES","GS","GX","HS","IS","LC","LFA","LS","LX","NX","RC","RX","SC"],"lifan":["Breez","Cebrium","Celliya","Foison","Mini Truck","Murman","MyWay","Smily","Solano","X50","X60","X70"],"mazda":["121","1300","2","3","323","5","6","616","626","8","808","818","929","Allegro","Atenza","Axela","AZ-1","AZ-Offroad","AZ-Wagon","Biante","Bongo","Bongo Brawny","Bongo Friendee","Bravo","B-Series","BT-50","Capella","Carol","Chantez","Clef","Cosmo","Cronos","CX-3","CX-5","CX-7","CX-9","Demio","Drifter","Etude","Eunos 500","Eunos 800","Eunos Cosmo","Familia","Flair","Flair Wagon","GLC","Lantis","Laputa","Levante","Luce","Miata","Millenia","Montrose","MPV","MX-3","MX-5","MX-6","Navajo","Persona","Porter","Porter Cab","Premacy","Proceed","Proceed Levante","Protege","R100","R360","Revue","Roadpacer AP","Roadster","RX-2","RX-5","RX-7","RX-8","Scrum","Sentia","Spiano","Titan","Tribute","Verisa","Xedos 6","Xedos 9"],"mercedes_benz":["AMG GT","A-\u041a\u043b\u0430\u0441\u0441","B-\u041a\u043b\u0430\u0441\u0441","Citan","CLA-\u041a\u043b\u0430\u0441\u0441","CLC-\u041a\u043b\u0430\u0441\u0441","CLK-\u041a\u043b\u0430\u0441\u0441","CLS-\u041a\u043b\u0430\u0441\u0441","CL-\u041a\u043b\u0430\u0441\u0441","C-\u041a\u043b\u0430\u0441\u0441","E-\u041a\u043b\u0430\u0441\u0441","GLA-\u041a\u043b\u0430\u0441\u0441","GLC-\u041a\u043b\u0430\u0441\u0441","GLE-\u041a\u043b\u0430\u0441\u0441","GLK-\u041a\u043b\u0430\u0441\u0441","GLS-\u041a\u043b\u0430\u0441\u0441","GL-\u041a\u043b\u0430\u0441\u0441","G-\u041a\u043b\u0430\u0441\u0441","MB","M-\u041a\u043b\u0430\u0441\u0441","R-\u041a\u043b\u0430\u0441\u0441","SLC-\u041a\u043b\u0430\u0441\u0441","SLK-\u041a\u043b\u0430\u0441\u0441","SLR-\u041a\u043b\u0430\u0441\u0441","SLS AMG","SL-\u041a\u043b\u0430\u0441\u0441","Sprinter","S-\u041a\u043b\u0430\u0441\u0441","T1","T2","Type 300","Unimog","Vaneo","Vario","Viano","Vito","V-\u041a\u043b\u0430\u0441\u0441","X-\u041a\u043b\u0430\u0441\u0441"],"mini":["Cabrio","Clubman","Clubvan","Cooper","Cooper S","Countryman","Coupe","One","Paceman","Roadster"],"nissan":["100NX","180SX","200SX","240SX","300ZX","350Z","370Z","70","AD","Almera","Almera Classic","Almera Tino","Altima","Altra","Aprio","Armada","Atlas","Atlas Loco","Auster","Avenir","Axxess","Bassara","Be-1","Bluebird","Bluebird Sylphy","Caball","Cabstar","Caravan","Cedric","Cefiro","Cherry","Cherry Cab","Cima","Clipper","Crew","Cube","Datsun","Dayz","Dualis","Dualis+2","Elgrand","Expert","Fairlady Z","Figaro","Frontier","Fuga","Gazelle","Gloria","GT-R","Hardbody","Hikari","Homy","Hustler","Hypermini","Interstar","Juke","Junior","Kix","Kubistar","Lafesta","Langley","Largo","Latio","Laurel","Laurel Spirit","Leaf","Leopard","Liberta Villa","Liberty","Livina","Lucino","March","Maxima","Micra","Mistral","Moco","Multi","Murano","Navara","Note","NP200","NP300","NV","NV200","NV350","NV400","NX","Otti","Paladin","Pao","Pathfinder","Patrol","Pick UP","Pino","Pintara","Pixo","Platina","Prairie","Presage","Presea","President","Primastar","Primera","Pulsar","Qashqai","Quest","Rasheen","R'nessa","Rogue","Roox","Safari","S-Cargo","Sentra","Serena","Silvia","Skyline","Skyline Crossover","Stagea","Stanza","Sunny","Teana","Terrano","Tiida","Tino","Titan","Trade","Tsuru","Urvan","Vanette","Versa","Violet","Violet Liberta","Wingroad","Xterra","X-Trail"],"opel":["Adam","Admiral","Agila","Ampera","Antara","Arena","Ascona","Astra","Bedford Blitz","Blazer","Cabrio","Calais","Calibra","Campo","Cascada","Combo","Commodore","Corsa","Crossland X","Diplomat","Frontera","Grandland X","GT","Insignia","Kadett","Kapitan","Karl","Manta","Meriva","Mokka","Monterey","Monza","Movano","Omega","Rekord","Senator","Signum","Sintra","Speedster","Super 6","Tigra","Vectra","Vita","Vivaro","Zafira"],"peugeot":["1007","104","106","107","108","2008","201","202","203","204","205","206","207","208","3008","301","302","304","305","306","307","308","309","4007","4008","401","402","403","404","405","406","407","408","5008","504","505","508","604","605","607","806","807","Bipper","Boxer","Expert","Hoggar","iOn","J5","J7","Pars","Partner","Persia","RCZ","Roa","Traveller"],"renault":["10","11","12","14","15","16","17","18","19","20","21","25","3","30","4","5","6","7","8","9","Alaskan","Alliance","Avantime","Caravelle","Celtaquatre","Clio","Colorale","Dauphine","Dokker","Duster","Espace","Estafette","Express","Floride","Fluence","Fregate","Fuego","Juvaquatre","Kadjar","Kangoo","Kaptur","Koleos","Kwid","Laguna","Latitude","Le Car","Logan","Lutecia","Mascott","Master","Maxity","Megane","Modus","Monaquatre","Primaquatre","Pulse","Rodeo","Safrane","Sandero","Scala","Scenic","Sport Spider","Symbol","Talisman","Thalia","Torino","Trafic","Twingo","Twizy","Vel Satis","Wind","Zoe"],"seat":["1200\/1430 Sport","124","127","128","131","132","133","1400","1430","1500","600\/800","850","Alhambra","Altea","Arosa","Ateca","Cordoba","Exeo","Fura","Ibiza","Inca","Leon","Malaga","Marbella","Mii","Panda","Ritmo","Ronda","Toledo"],"skoda":["100","1000 MB","105\/120\/130","1201","1202","1203","440\/445\/450","Citigo","Fabia","Favorit","Felicia","Forman","Garde","Karoq","Kodiaq","Laura","Octavia","Praktik","Rapid","Roomster","Superb","VOS","Yeti"],"smart":["Forfour","Fortwo","Roadster"],"ssangyong":["Actyon","Chairman","Istana","Kallista","Korando","Korando Family","Korando Turismo","Kyron","Musso","Nomad","Rexton","Rodius","Stavic","Tager","Tivoli"],"subaru":["1000","1500","Alcyone","Baja","Bighorn","BRAT","BRZ","Dex","Domingo","Estratto","Exiga","Exiga Crossover 7","FF-1","Fiori","Forester","Impreza","Justy","Legacy","Legacy Lancaster","Leone","Levorg","Libero","Loyale","Lucra","Mini Jumbo","Outback","Pleo","R1","R2","Rex","Sambar","Stella","SVX","Traviq","Trezia","Tribeca","Vivio","Vortex","XT","XV"],"suzuki":["Aerio","Alto","APV","Baleno","Beidouxing","Cappuccino","Carry","Celerio","Cervo","Cultus","Cultus Crescent","Equator","Ertiga","Escudo","Esteem","Every","Forenza","Forsa","Fronte","Fun","Grand Escudo","Grand Nomade","Grand Vitara","Ignis","Jimny","Karimun Estilo","Kei","Khyber","Kizashi","Landy","Lapin","Liana","Margalla","Mehran","Mighty Boy","MR Wagon","Palette","Potohar","Reno","Samurai","Santana","SC100","Sidekick","Sierra","Solio","Splash","Swift","SX4","Verona","Vitara","Wagon R","X-90","XL7"],"CHANGAN":["2000GT","4Runner","AA","AB","AC","AE","Agya","Allex","Allion","B30","Altezza","Aqua","Aristo","Aurion","Auris","Avalon","Avanza","Avensis","Avensis Verso","Aygo","bB","Belta","Blade","Blizzard","Brevis","Briska","Caldina","Cami","X40","X40 Solara","Carina","Carina ED","Carri","Cavalier","Celica","Celsior","Century","Chaser","C-HR","Classic","Comfort","Condor","X40","X40 Axio","X40 Ceres","X40 Levin","X40 Rumion","X40 Spacio","X40 Verso","Corona","Corona EXiV","Corsa","Cressida","Cresta","Crown","Crown Majesta","Curren","Cynos","Duet","Dyna","Echo","Esquire","Estima","Etios","FJ Cruiser","Fortuner","Fun Cargo","Gaia","Granvia","GT 86","Harrier","Hiace","Highlander","Hilux","Hilux Surf","Innova","Ipsum","iQ","Isis","Ist","Kijang","Kluger","Land Cruiser","Land Cruiser Prado","Lexcen","Lite Ace","Lite Ace Noah","Mark II","Mark X","Mark X Zio","Master","MasterAce","Matrix","Mega Cruiser","MiniAce","Mirai","Model F","MR2","MR-S","Nadia","Noah","Opa","Origin","Paseo","Passo","Passo Sette","Picnic","Pixis","Platz","Porte","Premio","Previa","Prius","Prius a","Prius C","Prius Plus","Prius V","ProAce","Probox","Progres","Pronard","Publica","Quantum","Ractis","Raum","CS75 1,8 AT COMFORT","Regius","Reiz","Rukus","Rush","Sai","Scepter","Sequoia","Sera","Sienna","Sienta","Soarer","Soluna","Space Cruiser","Sparky","Sports 800","Sprinter","Sprinter Carib","Sprinter Marino","Sprinter Trueno","Stallion","Starlet","Stout","Succeed","Super","Supra","T100","Tacoma","Tamaraw FX","Tarago","Tazz","Tercel","Tiara","Town Ace","Town Ace Noah","Town Ace Truck","Toyoace","Tundra","Unser","Urban Cruiser","Van","Vanguard","Vellfire","Venture","Venza","Verossa","Verso","Verso-S","Vienta","Vios","Vista","Vitz","Voltz","Voxy","Will Cypha","Will Vi","Will VS","Windom","Wish","Yaris","Yaris Verso","Zace","Zelas"],"volkswagen":["Amarok","Arteon","Beetle","Bora","Brasilia","Caddy","California","Caravelle","Citi Golf","Clasico","Corrado","Country Buggy","Crafter","Derby","Dune Buggy","Eos","Fox","Gol","Golf","Iltis","Jetta","Karmann Ghia","L80","Lavida","LT","Lupo","Magotan","Multivan","New Beetle","Parati","Passat","Passat CC","Phaeton","Pointer","Polo","Quantum","Rabbit","Routan","Sagitar","Santana","Saveiro","Scirocco","Sharan","SP2","Suran","Taro","Teramont","Tiguan","Touareg","Touran","Transporter","T-Roc","Up","Vento","Voyage"],"volvo":["120","140","164","240","260","340","360","440","460","480","66","740","760","780","850","940","960","Amazon","C30","C70","Duett","P1800","PV444\/544","PV60","S40","S60","S70","S80","S90","V40","V50","V60","V70","V90","XC40","XC60","XC70","XC90"],"r_r_r_r_r_r_":["2110","2111","2310","2312"],"r_r_r_":["1705","2345","2346","2347","2348","2349","13 \u0427\u0430\u0439\u043a\u0430","14 \u0427\u0430\u0439\u043a\u0430","17310 \u0422\u0440\u043e\u0444\u0438\u043c","21 \u0412\u043e\u043b\u0433\u0430","2308 \u0410\u0442\u0430\u043c\u0430\u043d","233001 \u0422\u0438\u0433\u0440","24 \u0412\u043e\u043b\u0433\u0430","3102 \u0412\u043e\u043b\u0433\u0430","310221 \u0412\u043e\u043b\u0433\u0430","31029 \u0412\u043e\u043b\u0433\u0430","3105 \u0412\u043e\u043b\u0433\u0430","3110 \u0412\u043e\u043b\u0433\u0430","31105 \u0412\u043e\u043b\u0433\u0430","3111","3307","3308","3309","3310 \u0412\u0430\u043b\u0434\u0430\u0439","51","52","53","63","66","67","69","Next","Siber","\u0413\u0430\u0437\u0435\u043b\u044c","\u041c-1","\u041c-12 \u0417\u0438\u041c","\u041c-20 \u041f\u043e\u0431\u0435\u0434\u0430","\u0421\u043e\u0431\u043e\u043b\u044c","2360","23602 \\\"Cargo\\\"","3128 \\\"\u0410\u0441\u0442\u0435\u0440\u043e\\\"","3151","3153","3159 \\\"\u0411\u0430\u0440\u0441\\\"","3160","3162 \\\"Simbir\\\"","452","469","Hunter","Patriot","Pickup","Profi"],"r_r_c_rier_rec_":["2136","2137","2138","2140","2141","2315","2335","2733","2734","400","401","402","403","407","408","410","411","412","423","426","427","431","\u0418\u0432\u0430\u043d \u041a\u0430\u043b\u0438\u0442\u0430","\u041a\u043d\u044f\u0437\u044c \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440","\u0421\u0432\u044f\u0442\u043e\u0433\u043e\u0440","\u042e\u0440\u0438\u0439 \u0414\u043e\u043b\u0433\u043e\u0440\u0443\u043a\u0438\u0439"],"r_c_r_c_rer__r_r_c_r_":["\u041f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u043e\u043c\u0430\u0440\u043a\u0438","\u041f\u0440\u043e\u0447\u0438\u0435 \u0440\u0443\u0441\u0441\u043a\u0438\u0435 \u043c\u0430\u0448\u0438\u043d\u044b","\u0421\u0430\u043c\u043e\u0441\u043e\u0431\u0440\u0430\u043d\u043d\u044b\u0435"]};
+        		$(function(){
+        			$('select[name=model] option:not(:first)').hide();
+        			$('select[name=marka]').change(function(){
+        				$('select[name=model] option:not(:first)').remove();
+        				var _makra = $("option:selected",this).data('hurl');
+        				
+        				for (i in _models[_makra])
+        				$("select[name=model]").append("<option value='"+_models[_makra][i]+"'>"+_models[_makra][i]+"</option>");
+        			});
+        		});
+    </script>
+
+    <!-- <div class="bg2">
+		<div class="container">
+			<div class="bg2_title">CHANGAN ПО ВЫГОДНОЙ ЦЕНЕ</div>
+			<form id="form2" action="filter.php" method="POST" class="CKiForm" data-callkeeper_name="Количество а/м по акции ограничено!" data-flash-title="Количество а/м по акции ограничено!">
+				<input name="title"   				type="hidden" value="Количество а/м по акции ограничено!">
+				<input name="comment" 				type="hidden" value="">
+				<input name="form_name" 			type="hidden" value="zakaz_zvonka">
+				<input name="form_type_model_name"	type="hidden" value="">
+				<input name="form_diler" 			type="hidden" value="CHANGAN AVS Motors">
+				<div class="form_title">Количество а/м по акции<br/> ограничено!</div>
+				<div class="columns">
+					<div class="form-group ico_phone">
+						<input type="text"id="phone"  name="phone" required=""   class="nacc form-control" placeholder="Введите телефон" data-callkeeper_ignore data-flash="phone">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="form-control  CKFormTrigger btn black FlashFormSubmit">Получить выгоды</button>
+					</div>
+				</div>
+				<label class="agree_field"><input type="checkbox" name="agree" value="1" checked="checked">Я согласен на <a target="_blank" href="https://www.avsmotors.ru/soglasie/">обработку персональных данных</a> в соответствии с <a target="_blank" href="https://www.avsmotors.ru/soglasie/">политикой конфиденциальности</a></a></label>
+			</form>
+		</div>
+	</div> -->
+
+
+    <div class="container">
+        <div class="header1">КОМПЛЕКТАЦИИ В НАЛИЧИИ С ПТС В ЕКАТЕРИНБУРГЕ</div>
+
+
+        <div class="table_header">
+            <div class="table_header_txt">Модель</div>
+            <div class="table_header_txt">Комплектация</div>
+            <div class="table_header_txt">Двигатель и трансмиссия</div>
+            <div class="table_header_txt">Цена</div>
+        </div>
+
+        <script>
+            $(function()
+            	{
+            		var l_func_show_models = function()
+            		{
+            			var l_model  = $('#tb_complects select[name=models]').val();
+            			var l_compl  = $('#tb_complects select[name=complects]').val();
+            			var l_engine = $('#tb_complects select[name=engine]').val();
+            
+            			$(".tb_complects tr").addClass("show");
+            
+            			//===== MODELS =====
+            			if ( l_model )
+            			{
+            				console.log("model:"+l_model);
+            
+            				$(".tb_complects tr").removeClass("show");
+            				$(".tb_complects tr[data-model='"+l_model+"']").addClass("show");
+            
+            				//FILTER
+            				$('#tb_complects select[name=complects] option:not(:eq(0))').remove();
+            				$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            
+            				//$('#tb_complects select[name=complects] option:not(:eq(0))').remove();
+            				//$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            				//$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            				_complects = {};
+            				$(".tb_complects tr.show").each(function()
+            				{
+            					_complect = $(this).data('complect');
+            					_complect_name = $(this).data('complect-name');
+            					if (_complects[_complect] === undefined)
+            						$('#tb_complects select[name=complects]').append("<option value='"+_complect+"'>"+_complect+"</option>");
+            					_complects[_complect] = _complect_name;
+            				});
+            				$('#tb_complects select[name=complects]').val( l_compl );
+            				//END_ FILTER
+            			}//end_ if
+            			//===== END_ MODELS =====
+            
+            			//===== COMPL =====
+            			if ( l_compl )
+            			{
+            				console.log("compl:"+l_compl);
+            				$(".tb_complects tr").removeClass("show");
+            				$(".tb_complects tr[data-model='"+l_model+"'][data-complect='"+l_compl+"']").addClass("show");
+            
+            				//FILTER
+            				//$('#tb_complects select[name=complects] option:not(:eq(0))').remove();
+            				$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            
+            				_engines = {};
+            				$(".tb_complects tr.show").each(function()
+            				{
+            					_engine = $(this).data('engine');
+            					_engine_name = $(this).data('engine');
+            					if (_engines[_engine] === undefined)
+            						$('#tb_complects select[name=engine]').append("<option value='"+_engine+"'>"+_engine+"</option>");
+            					_engines[_engine] = _engine_name;
+            				});
+            				//END_ FILTER
+            				$('#tb_complects select[name=engine]').val( l_engine );
+            			}//end_ if
+            			//===== END_ COMPL =====
+            
+            			//===== ENGINE =====
+            			if ( l_engine )
+            			{
+            				console.log("engine:"+l_engine);
+            				$(".tb_complects tr").removeClass("show");
+            				$(".tb_complects tr[data-model='"+l_model+"'][data-complect='"+l_compl+"'][data-engine='"+l_engine+"']").addClass("show");
+            			}//end_ if
+            			//===== END_ ENGINE =====
+            
+            			if ( l_model || l_compl || l_engine )
+            			{
+            				//$(".tb_complects").removeClass('limit');
+            				//$(".tb_complects_showmore").hide();
+            				//$(".tb_complects tr").removeClass("megahide");
+            			}else
+            			{
+            				//$(".tb_complects").addClass('limit');
+            				//$(".tb_complects tr:visible:lt(3)").addClass("megahide");
+            			}//end_ if
+            
+            
+            			var l_index = 0;
+            			//console.log( "====="+$(".tb_complects tr.show").length );
+            			$(".tb_complects tr").removeClass("megahide");
+            			
+            			$(".tb_complects tr.show").each( function()
+            			{	
+            				l_index++;
+            				//console.log( l_index+"; model="+$(this).attr("data-model") );
+            				if (l_index>2)
+            				{
+            					console.log("hide");
+            					$(this).addClass("megahide");					
+            				}
+            
+            				$('#tb_complects select[name=models]').click(function() {
+            					$(".tb_complects tr").removeClass("megahide");
+            					$(".tb_complects_showmore").hide();
+            				});
+            
+            				// if ($(".select_container select option").attr("value", "X40")) {
+            				// 		$(this).removeClass("megahide");
+            				// 	}
+            			} );
+            			$(".tb_complects_showmore").show();
+            
+            			}
+            			//end_ func
+            
+            		$('#tb_complects select[name=models]').change(function()
+            		{
+            			$('#tb_complects select[name=complects] option:not(:eq(0))').remove();
+            			$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            			l_func_show_models();
+            		} );
+            		$('#tb_complects select[name=complects]').change(function()
+            		{
+            			$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            			l_func_show_models();
+            		} );
+            		$('#tb_complects select[name=engine]').change(function()
+            		{
+            			//$('#tb_complects select[name=engine] option:not(:eq(0))').remove();
+            
+            		l_func_show_models();
+            		} );
+            		$(".tb_complects_showmore").click( function()
+            		{
+            			$(".tb_complects tr").removeClass("megahide");
+            			$(".tb_complects_showmore").hide();
+            			return false;
+            		} );
+            		l_func_show_models();
+            	});
+        </script>
+            <table id="tb_complects" class="resp_table tb_complects resp_table1">
+            <tbody>
+                <tr class="car_X40 show" data-model="CS35 Plus" data-complect="комфорт" data-complect-name="комфорт" data-engine="1,6 л, 122 л.с., CVT, FWD, 4дв.">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/car-car2-1.png"></a></td>
+                    <td>
+                        <div class="complect">CS35 Plus 1,6 MT COMFORT</div>
+                    </td>
+                    <td>
+                        <div class="engine">1,6 л, 128 л.с., МТ, FWD, 5дв.<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгодный Trade-in на CHANGAN X40" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus Комфорт" data-form_diler=""><span>Выгода по Trade-in до 40 000 <span class="rub">Р </span> **</span></a><a class="popup link"
+                            href="#form_popup" data-title="Выгода при покупке в кредит на CHANGAN X40" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS35 Plus Комфорт" data-form_diler=""><span>Выгода по кредиту</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="Кредит от&nbsp;275 <span class=rub>Р </span> /день CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus Комфорт" data-form_diler=""><span>Выгодный кредит от 0,1%-6%</span></a>
+                            </a><a class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus Комфорт" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a>
+                            <a
+                                class="popup btn white" href="#form_popup_kred" data-car="CS35 Plus" data-title="Рассчитать кредит на CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus Комфорт" data-form_diler=""><span>Заявка на онлайн кредит</span></a>
+                    </td>
+                </tr>
+                <tr class="car_X40 show" data-model="CS35 Plus" data-complect="стандарт" data-complect-name="стандарт" data-engine="2 л, 150 л.с., АКП6, FWD, 4дв.">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/car-car4-1 (1).png"></a></td>
+                    <td>
+                        <div class="complect">CS35 Plus 1,6 АT COMFORT</div>
+                    </td>
+                    <td>
+                        <div class="engine">1.6 л, 128 л.с., АТ, FWD, 5дв.<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгодный Trade-in на CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus" data-form_diler=""><span>Выгода по Trade-in до 40 000 <span class="rub">Р </span> **</span></a><a class="popup link"
+                            href="#form_popup" data-title="Выгода при покупке в кредит на CHANGAN CS35 Plus" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS35 Plus" data-form_diler=""><span>Выгода по кредиту</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="Кредит от&nbsp;302 <span class=rub>Р </span> /день CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus" data-form_diler=""><span>Выгодный кредит от 0,1%-6%</span></a>
+                            </a><a class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a>
+                            <a
+                                class="popup btn white" href="#form_popup_kred" data-car="CS35 Plus" data-title="Рассчитать кредит на CHANGAN CS35 Plus" data-comment="" data-form_name="credit" data-form_type_model_name="CS35 Plus" data-form_diler=""><span>Заявка на онлайн кредит</span></a>
+                    </td>
+                </tr>
+                <tr class="car_X40 show" data-model="CS55" data-complect="стандарт_плюс" data-complect-name="стандарт_плюс" data-engine="2 л, 150 л.с., АКП6, FWD, 4дв.">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/slider-car-4 (1).png"></a></td>
+                    <td>
+                        <div class="complect">CS55 COMFORT 6AT</div>
+                    </td>
+                    <td>
+                        <div class="engine">1.5 л, 143 л.с., АКП6, FWD, 5дв.<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгода по Trade-in до 100 000 <span class=rub>Р </span> ** на CHANGAN CS55" data-comment="" data-form_name="credit" data-form_type_model_name="CS55" data-form_diler=""><span>Выгода по Trade-in до 100 000 <span class="rub">Р </span> **</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="Выгода по кредиту до 50 000 <span class=rub>Р </span> *** на CHANGAN CS55" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS55"
+                            data-form_diler=""><span>Выгода по кредиту до 50 000 <span class="rub">Р </span> ***</span>
+                            </a><a class="popup link" href="#form_popup" data-title="Кредит от&nbsp;317 <span class=rub>Р </span> /день CHANGAN CS55" data-comment="" data-form_name="credit" data-form_type_model_name="CS55" data-form_diler=""><span>Выгодный кредит от 0,1%-6%</span></a>
+                            <a
+                                class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS55" data-comment="" data-form_name="credit" data-form_type_model_name="CS55" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a><a class="popup btn white" href="#form_popup_kred" data-car="X40" data-title="Рассчитать кредит на CHANGAN X40" data-comment="" data-form_name="credit" data-form_type_model_name="X40 Стандарт Плюс"
+                                    data-form_diler=""><span>Заявка на онлайн кредит</span></a></td>
+                <tr class="car_CS75 1,8 AT COMFORT show" data-model="CS75" data-complect="стандарт" data-complect-name="стандарт" data-engine="2 л, 149 л.с., МКП6, 2WD, 5дв">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/white.png"></a></td>
+                    <td>
+                        <div class="complect">CS75 1,8 AT COMFORT</div>
+                    </td>
+                    <td>
+                        <div class="engine">1.8 л, 150 л.с., АТ, FWD, 5дв<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгодный Trade-in на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Стандарт" data-form_diler=""><span>Выгодный Trade-in 60 000 <span class="rub">Р </span> **</span></a><a class="popup link"
+                            href="#form_popup" data-title="Выгода при покупке в кредит на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75 1,8 AT COMFORT Стандарт" data-form_diler=""><span>Выгода при покупке в кредит </br>30 000 <span class="rub">Р </span> **</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="ПРЯМАЯ СКИДКА 110 000 Р на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Стандарт" data-form_diler=""><span>ПРЯМАЯ СКИДКА 110 000<span class="rub">Р </span> **</span></a
+                            </a><a class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Стандарт" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a>
+                            <a
+                                class="popup btn white" href="#form_popup_kred" data-car="CS75 1,8 AT COMFORT" data-title="Рассчитать кредит на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Стандарт" data-form_diler=""><span>Заявка на онлайн кредит</span></a>
+                    </td>
+                </tr>
+                <tr class="CS75 1,8 AT ELITE show" data-model="CS75" data-complect="комфорт" data-complect-name="комфорт" data-engine="2 л, 149 л.с., CVT, 2WD, 5дв.">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/red (1).png"></a></td>
+                    <td>
+                               <div class="complect">CS75 1,8 AT ELITE</div>
+                    </td>
+                    <td>
+                        <div class="engine">1.8 л, 150 л.с., АТ, FWD, 5дв<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгода по Trade-in до 240 000 <span class=rub>Р </span> ** на CHANGAN CS75 1,8 AT ELITE" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT ELITE" data-form_diler=""><span>Выгода по Trade-in 60 000 <span class="rub">Р </span> **</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="Выгода по кредиту до 50 000 <span class=rub>Р </span> *** на CHANGAN CS75 1,8 AT ELITE" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75 1,8 AT ELITE" data-form_diler=""><span>Выгода по кредиту </br>30 000 <span class="rub">Р </span> ***</span>
+                            </a><a class="popup link" href="#form_popup" data-title="ПРЯМАЯ СКИДКА 110 000 Р на CHANGAN CS75 1,8 AT ELITE" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT ELITE" data-form_diler=""><span>ПРЯМАЯ СКИДКА 110 000<span class="rub">Р </span> **</span></a>
+                            <a
+                                class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS75 1,8 AT ELITE" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Комфорт" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a><a class="popup btn white" href="#form_popup_kred" data-car="CS75 1,8 AT COMFORT" data-title="Рассчитать кредит на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Комфорт"
+                                    data-form_diler=""><span>Заявка на онлайн кредит</span></a></td>
+                </tr>
+                <tr class="car_CS75 1,8 AT COMFORT show" data-model="CS75FL" data-complect="престиж" data-complect-name="престиж" data-engine="2 л, 149 л.с., CVT, 4WD, 5дв.">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/grey-2.png"></a></td>
+                    <td>
+                        <div class="complect">CS75FL COMFORT 2WD</div>
+                    </td>
+                    <td>
+                        <div class="engine">1.8 л, 150 л.с., АT, FWD, 5дв.<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгода по Trade-in до 240 000 <span class=rub>Р </span> ** на CHANGAN CS75FL COMFORT 2WD" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL COMFORT 2WD" data-form_diler=""><span>Выгода по Trade-in 40 000 <span class="rub">Р </span> **</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="Выгода по кредиту до 50 000 <span class=rub>Р </span> *** на CHANGAN CS75FL COMFORT 2WD" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75FL COMFORT 2WD" data-form_diler=""><span>Выгода по кредиту 30 000 <span class="rub">Р </span> ***</span>
+                            </a><a class="popup link" href="#form_popup" data-title="Выгодный кредит на CHANGAN CS75FL COMFORT 2WD" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL COMFORT 2WD" data-form_diler=""><span>Выгодный кредит от 0,1%-6%</span></a>
+                            <a
+                                class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL COMFORT 2WD" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a><a class="popup btn white" href="#form_popup_kred" data-car="CS75 1,8 AT COMFORT" data-title="Рассчитать кредит на CHANGAN CS75 1,8 AT COMFORT" data-comment="" data-form_name="credit" data-form_type_model_name="CS75 1,8 AT COMFORT Престиж"
+                                    data-form_diler=""><span>Заявка на онлайн кредит</span></a></td>
+                </tr>
+                <tr class="car_B30 show" data-model="CS75FL" data-complect="executive_lounge" data-complect-name="executive_lounge" data-engine="3,5 л, 275 л.с., АКП6, FWD, 5дв.">
+                    <td class="image-wrap"><a href="#form_popup" class="popup"><img alt="" src="./img/broun.png"></a></td>
+                    <td>
+                    <div class="complect">CS75FL COMFORT 4WD</div>
+                    </td>
+                    <td>
+                        <div class="engine">1.8 л, 150 л.с., АT, 4WD, 5дв.<br></div>
+                    </td>
+                    <td><a class="popup link" href="#form_popup" data-title="Выгода по Trade-in на CHANGAN CS75FL" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL Executive Lounge" data-form_diler=""><span>Выгода по Trade-in 40 000 <span class="rub">Р </span> **</span></a>
+                        <a
+                            class="popup link" href="#form_popup" data-title="Выгода по кредиту на CHANGAN CS75FL" data-comment="" data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="CS75FL Executive Lounge"
+                            data-form_diler=""><span>Выгода при покупке в кредит</span>
+                            </a><a class="popup link" href="#form_popup" data-title="Выгодный кредит от 0,1%-6% CHANGAN CS75FL" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL Executive Lounge" data-form_diler=""><span>Выгодный кредит 30 000 <span class="rub">Р </span> **</span></a>
+                            <a
+                                class="popup btn" href="#form_popup" data-title="Узнать спец. цену в дни акции на CHANGAN CS75FL" data-comment="" data-form_name="credit" data-form_type_model_name="CS75FL Executive Lounge" data-form_diler=""><span>Узнать спец. цену в дни акции</span></a><a class="popup btn white" href="#form_popup_kred" data-car="B30" data-title="Рассчитать кредит на CHANGAN B30" data-comment="" data-form_name="credit" data-form_type_model_name="B30 Executive Lounge"
+                                    data-form_diler=""><span>Заявка на онлайн кредит</span></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+<div class="container">
+        <div class="header1">АВС Моторс- первый официальный дилер CHANGAN в Екатеринбурге
+</div>
+<center><p><img src="img/sert4.jpg" width="550" height="400" alt="Официальный дилер ">
+	
+ <div class="container">
+        <div class="header1">Наши клиенты</div>
+
+
+ 	<div class="benefits__items">
+					<div class="benefits__slider">
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/01.jpg">							 
+							</div>
+						</div>
+						
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/02.jpg">							 
+							</div>
+						</div>
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/03.jpg">							 
+							</div>
+						</div>
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/04.jpg">							 
+							</div>
+							</div>
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/05.jpg">							 
+					</div>
+						</div>
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/06.jpg">							 
+							</div>
+							</div>
+						<div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="img/07.jpg">							 
+					</div>
+						</div>
+						
+						
+						 
+						 
+					</div>
+				</div>
+
+       
+        
+    </div>
+	
+	<style> 
+.benefits__slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__item {
+ 
+    width: 360px;
+    display: block;
+    margin: 0 auto;
+}
+
+.benefits__item img {
+   max-width: 100%;
+}
+	</style> 
+	<link rel="stylesheet" type="text/css" href="slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+	 
+	<script type="text/javascript" src="slick.min.js"></script>
+
+
+ 
+	
+	<script>
+	$('.benefits__slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        
+        slidesToShow: 1
+      }
+    }
+	 ]
+});</script>
+	
+	
+	
+    <div class="container contacts_container">
+        <div class="contacts">
+            <div class="title">Контакты</div>
+            <div class="logo_text">Первый официальный дилер CHANGAN в Челябинске  </div>
+            <div class="bottom_addr">- Екатеринбург, Онежская 14а</div>
+            <br>
+            <a class="bottom_phone" href="tel:+73432878787">+7 (343) 287-87-87</a>
+            <form id="form3" action="order.php" method="POST" class="CKiForm" data-callkeeper_name="Перезвоните мне" data-flash-title="Перезвоните мне">
+                <input name="title" type="hidden" value="Перезвоните мне">
+                <input name="comment" type="hidden" value="">
+                <input name="form_name" type="hidden" value="zakaz_zvonka">
+                <input name="form_type_model_name" type="hidden" value="">
+                <input name="form_diler" type="hidden" value="CHANGAN AVS Motors">
+                <div class="columns">
+                    <div class="form-group ico_phone">
+                        <input type="text" id="phone"  name="phone" required=""   class="nacc form-control" placeholder="Введите телефон" data-callkeeper_ignore data-flash="phone">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control  CKFormTrigger btn black FlashFormSubmit">Перезвоните мне</button>
+                    </div>
+                </div>
+                <label class="agree_field"><input type="checkbox" name="agree" value="1" checked="checked">Я согласен на <a target="_blank" href="https://www.avsmotors.ru/soglasie/">обработку персональных данных</a> в соответствии с <a target="_blank" href="https://www.avsmotors.ru/soglasie/">политикой конфиденциальности</a></label>
+            </form>
+        </div>
+    </div>
+    <div id="map1"></div>
+    <div class="container">
+        <div class="information_text">© 2020 АВС-Моторс<br>
+            <a class="information" href="https://www.avsmotors.ru/soglasie/" ; target="_blank">Правовая информация</a></div>
+        <div class="disclamer">
+
+            <div>Вся представленная на сайте информация, включая, но не ограничиваясь информацией о стоимости автомобилей, аксессуаров* и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437
+                (2) ГК РФ. Для получения подробной информации обращайтесь в наши автосалоны. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.</div>
+
+            <div> *Предложение действует до 31.05.20г.</div>
+            
+
+
+        </div>
+    </div>
+    <script>
+        $(function(){
+        			$('.disclamer_switch').click(function(){
+        				$('.disclamer').slideToggle();
+        				return false;
+        			});
+        		});
+    </script>
+
+
+    <div id="form_popup">
+        <form action="order.php" method="POST" class="CKiForm popup_container" data-callkeeper_name="" data-flash-title="">
+            <input name="title" type="hidden" value="">
+            <input name="comment" type="hidden" value="">
+            <input name="form_name" type="hidden" value="">
+            <input name="form_type_model_name" type="hidden" value="">
+            <input name="form_diler" type="hidden" value="">
+
+            <h2 class="form_title">Заголовок</h2>
+            <div class="form-group ico_phone">
+                <input type="text" id="phone"  name="phone" required=""   class="nacc form-control" placeholder="Ваш телефон" data-callkeeper_ignore data-flash="phone">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-control  CKFormTrigger btn FlashFormSubmit">Отправить</button>
+            </div>
+            <label class="agree_field"><input type="checkbox" name="agree" value="1" checked="checked">Я согласен на <a target="_blank" href="https://www.avsmotors.ru/soglasie/">обработку персональных данных</a> в соответствии с <a target="_blank" href="https://www.avsmotors.ru/soglasie/">политикой конфиденциальности</a></label>
+        </form>
+    </div>
+
+    <div id="form_popup_kred">
+        <form action="order.php" method="POST" class="CKiForm popup_container" data-callkeeper_name="" data-flash-title="">
+            <input name="title" type="hidden" value="">
+            <input name="comment" type="hidden" value="">
+            <input name="form_name" type="hidden" value="">
+            <input name="form_type_model_name" type="hidden" value="">
+            <input name="form_diler" type="hidden" value="">
+
+            <h2 class="form_title"></h2>
+
+            <!-- <div class="form-group">
+				<label></label>
+				<select name="model" class="nacc">
+					<option value="">Выберите модель</option>
+					<option value="X40">CHANGAN X40</option>
+					<option value="CS75 1,8 AT COMFORT">CHANGAN CS75 1,8 AT COMFORT</option>
+					<option value="X40">CHANGAN X40</option>
+					<option value="lc200">CHANGAN LC200</option>
+					<option value="c_hr">CHANGAN C-HR</option>
+					<option value="prado">CHANGAN PRADO</option>
+					<option value="highlander">CHANGAN HIGHLANDER</option>
+					<option value="fortuner">CHANGAN FORTUNER</option>
+					<option value="hilux">CHANGAN HILUX</option>
+				</select>
+			</div> -->
+
+
+            <div class="form-group carcost">
+                <label>Первоначальный взнос</label>
+                <div><input type="number" name="car_vznos" value=0 class="nacc"> руб.</div>
+            </div>
+
+
+            <div class="form-group carvznos">
+                <label>Срок кредитования</label>
+                <div><input type="number" name="car_srok" value=0 class="nacc"> мес.</div>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <label></label>
+                <input name="name" class="name form-control nacc" type="text" placeholder="Ваше имя" data-flash="name" data-callkeeper="name">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" required="" class="nacc form-control" placeholder="Ваш телефон" data-callkeeper="tel" data-flash="phone">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-control  CKFormTrigger FlashFormSubmit btn">Отправить</button>
+            </div>
+            <label class="agree_field"><input type="checkbox" name="agree" value="1" checked="checked"> <span><a target="_blank" href="http://www.avtomir.ru/agreement/docs/legat_personal_data.pdf">Согласие</a> на обработку персональных данных</span></label>
+            <!--div class="form-disclamer">Ваши данные в безопасности и не будут переданы третьим лицам</div-->
+        </form>
+    </div>
+ 
+
+ 
+   
+	
+ 
+   
+    <!-- ION SLIDER-->
+
+
+<script>(function(d, w){ w.lp9 = 'wosega99'; var s = d.createElement('script'); s.async = true; s.src = 'https://lp9.ru/widget/'+w.lp9+'.js?'+Date.now(); s.charset = 'UTF-8'; if (d.head) d.head.appendChild(s); })(document, window);</script>
+</body>
+
+</html>
