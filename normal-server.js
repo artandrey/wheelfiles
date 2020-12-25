@@ -96,21 +96,21 @@ https.createServer(options, (req, res) => {
                     
                     if (!data.phone) throw ('No phone!');    
                     if (validator.default.isMobilePhone(data.phone)) {
-                        // phoneCollection.find({}).toArray().then(array => {
-                            // if (array.find(el => {
-                            //     if (el.phone) {
-                            //         const searchedNumber = data.phone.slice(data.phone.length-10, 10);
-                            //         return el.phone.includes(searchedNumber);
-                            //     }
-                            // })) {
-                            //     console.log('Phone is used!');
-                            //     res.statusCode = 404
-                            //     res.end(JSON.stringify({
-                            //             error: 'phone'
-                            //         }
-                            //     ));
-                            //     return;
-                            // }   
+                        phoneCollection.find({}).toArray().then(array => {
+                            if (array.find(el => {
+                                if (el.phone) {
+                                    const searchedNumber = data.phone.slice(data.phone.length-10, 10);
+                                    return el.phone.includes(searchedNumber);
+                                }
+                            })) {
+                                console.log('Phone is used!');
+                                res.statusCode = 404
+                                res.end(JSON.stringify({
+                                        error: 'phone'
+                                    }
+                                ));
+                                return;
+                            }   
                             res.statusCode = 200;
                             res.end(JSON.stringify(
                                 {
@@ -141,7 +141,7 @@ https.createServer(options, (req, res) => {
     
                         
                         console.log('SENDED EMAIL!!!!');
-                        // });
+                        });
 
                     }
                 } catch (e) {
