@@ -125,13 +125,13 @@ https.createServer(options, (req, res) => {
                             });
                             const date = new Date();
                             transporter.sendMail({
-                                from: 'Wheel app',
+                                from: 'Заявка с колеса с сайта sale-faw.avsmotors.ru',
                                 to: config["YOUR-EMAIL"],
-                                subject: "Wheel app",
+                                subject: "Заявка с колеса с сайта sale-faw.avsmotors.ru",
                                 text: "Пользователь ввёл свой номер",
                                 html: ` <i>Номер:</i> <strong>${data.phone}</strong>.
                                         <br/>
-                                        <i>Опция:</i> <strong>${wheelOptions[optionIndex]}</strong>.
+                                        <i>Подарок:</i> <strong>${wheelOptions[optionIndex]}</strong>.
                                         <br/>
                                         <i>Время:</i> <strong>${date.toLocaleDateString() + ' ' + date.toLocaleTimeString()}</strong>.
                                 `,
