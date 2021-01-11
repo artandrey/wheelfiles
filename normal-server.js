@@ -125,9 +125,9 @@ https.createServer(options, (req, res) => {
                             });
                             const date = new Date();
                             transporter.sendMail({
-                                from: 'Заявка с колеса с сайта sale-faw.avsmotors.ru',
+                                from: 'Заявка с колеса с сайта ' + data.url,
                                 to: config["YOUR-EMAIL"],
-                                subject: "Заявка с колеса с сайта sale-faw.avsmotors.ru",
+                                subject: "Заявка с колеса с сайта " + data.url,
                                 text: "Пользователь ввёл свой номер",
                                 html: ` <i>Номер:</i> <strong>${data.phone}</strong>.
                                         <br/>
