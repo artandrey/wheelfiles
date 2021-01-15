@@ -13,7 +13,7 @@ const RunCarouselFix = function () {
             }, 200);
             // console.log(imgs);
             imgs.some((el, i, array) => {
-                if (el.src === el.getAttribute('data-src')) {
+                if (el.src !== el.getAttribute('data-src')) {
                     const zero = array[i];
                     const first = array[i + 1];
                     const second = array[i + 2];
@@ -50,5 +50,5 @@ window.addEventListener('load', () => {
     console.log('Added scroll by');
     console.log('Updated src');
     console.log('Console out');
-    console.log('Changed scroll');
+    // console.log('Changed scroll');
 });
