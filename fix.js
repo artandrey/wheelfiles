@@ -13,22 +13,8 @@ const RunCarouselFix = function () {
             }, 200);
             // console.log(imgs);
             imgs.some((el, i, array) => {
-                console.log(el.src !== el.getAttribute('data-src'), el.src, el.getAttribute('data-src'));
-                if (el.src !== el.getAttribute('data-src')) {
-                    const zero = array[i];
-                    const first = array[i + 1];
-                    const second = array[i + 2];
-                    const third = array[i + 3];
-                    const fourth = array[i + 3];
-                    console.log(zero, first, second, third, fourth);
-                    zero && setSrc(zero);
-                    first && setSrc(first);
-                    second && setSrc(second);
-                    third && setSrc(third);
-                    fourth && setSrc(fourth);
-                    return el;
-                }
-            })
+                el.src = el.getAttribute('data-src');
+            });
         });
     });
     const popular = document.querySelector('.popular-in');
