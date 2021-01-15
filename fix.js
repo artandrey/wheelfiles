@@ -6,15 +6,17 @@ const RunCarouselFix = function () {
     const sections = document.querySelectorAll('.sect-carou');
     sections.forEach(section => {
         const nav = section.querySelector('.owl-nav');
-        const imgs = [...section.querySelectorAll('img')].filter(img => img.hasAttribute('data-src'));
+        const items = document.querySelectorAll('.owl-item');
         nav.addEventListener('click', () => {
             setTimeout(() => {
                 window.scrollBy(0,0.1);
             }, 200);
-            // console.log(imgs);
-            imgs.some((el, i, array) => {
-                console.log(el.getAttribute('data-src'));
-                el.getAttribute('data-src') === el.src && console.log(el);
+            [...items].forEach(item => {
+                if (item.classList.contains('active')) {
+                    const img = item.querySelector('img')
+                    const src = img.getAttribute('data-src');
+                    img.src = src;
+                }
             });
         });
     });
