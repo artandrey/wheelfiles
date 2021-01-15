@@ -17,6 +17,7 @@ const RunCarouselFix = function () {
                     const second = array[i + 2];
                     const third = array[i + 3];
                     const fourth = array[i + 3];
+                    console.log(zero, first, second, third, fourth);
                     zero && setSrc(zero);
                     first && setSrc(first);
                     second && setSrc(second);
@@ -46,4 +47,5 @@ window.addEventListener('load', () => {
     console.log('Added timeout');
     console.log('Added scroll by');
     console.log('Updated src');
+    console.log('Console out');
 });
