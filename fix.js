@@ -1,6 +1,7 @@
 console.log('Loaded');
 
 const RunCarouselFix = function () {
+    console.log('Carousel fix');
     // owl-nav
     const sections = document.querySelectorAll('.sect-carou');
     sections.forEach(section => {
