@@ -22,3 +22,5 @@ const RunCarouselFix = function () {
         el.src = el.getAttribute('data-src');
     }
 }
+
+RunCarouselFix();
