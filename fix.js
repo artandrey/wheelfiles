@@ -23,5 +23,6 @@ const RunCarouselFix = function () {
         el.src = el.getAttribute('data-src');
     }
 }
-
-RunCarouselFix();
+window.addEventListener('load', () => {
+    setTimeout(RunCarouselFix, 1000);
+});
