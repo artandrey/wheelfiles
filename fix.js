@@ -14,8 +14,10 @@ const RunCarouselFix = function () {
                 if (el.src === el.getAttribute('data-src')) {
                     const first = array[i + 1];
                     const second = array[i + 2];
+                    const third = array[i + 3];
                     first && setSrc(first);
                     second && setSrc(second);
+                    third && setSrc(third);
                     return el;
                 }
             })
