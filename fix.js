@@ -13,7 +13,7 @@ const RunCarouselFix = function () {
             }, 200);
             // console.log(imgs);
             imgs.some((el, i, array) => {
-                el.src = el.getAttribute('data-src');
+                el.getAttribute('data-src') === el.src && console.log(el);
             });
         });
     });
