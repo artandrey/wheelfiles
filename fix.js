@@ -9,7 +9,7 @@ const RunCarouselFix = function () {
         const imgs = [...section.querySelectorAll('img')].filter(img => img.hasAttribute('data-src'));
         nav.addEventListener('click', () => {
             window.scrollBy(0,1);
-            console.log(imgs);
+            // console.log(imgs);
             imgs.some((el, i, array) => {
                 if (el.src === el.getAttribute('data-src')) {
                     const zero = array[i];
