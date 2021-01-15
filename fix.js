@@ -36,9 +36,9 @@ const RunCarouselFix = function () {
 }
 window.addEventListener('load', () => {
     setTimeout(RunCarouselFix, 1000);
-    console.log('Added timeout');
-    console.log('Added scroll by');
-    console.log('Updated src');
-    console.log('Console out');
+    // console.log('Added timeout');
+    // console.log('Added scroll by');
+    // console.log('Updated src');
+    // console.log('Console out');
     // console.log('Changed scroll');
 });
