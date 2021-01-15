@@ -15,14 +15,26 @@ const RunCarouselFix = function () {
                     const first = array[i + 1];
                     const second = array[i + 2];
                     const third = array[i + 3];
+                    const fourth = array[i + 3];
                     first && setSrc(first);
                     second && setSrc(second);
                     third && setSrc(third);
+                    fourth && setSrc(fourth);
                     return el;
                 }
             })
         });
     });
+    const popular = document.querySelector('.popular-in');
+    const popularCarousel = popular.querySelector('.owl-carousel');
+    const owlStage = popularCarousel.querySelector('.owl-stage');
+    [...owlStage.querySelectorAll('img')].forEach(el => {
+        if (el.hasAttribute('data-src')) {
+            el.src = el.getAttribute('data-src');
+        }
+    });
+
+
     const setSrc = function (el) {
         el.src = el.getAttribute('data-src');
     }
