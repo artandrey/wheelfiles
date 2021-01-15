@@ -25,4 +25,5 @@ const RunCarouselFix = function () {
 }
 window.addEventListener('load', () => {
     setTimeout(RunCarouselFix, 1000);
+    console.log('Added timeout');
 });
