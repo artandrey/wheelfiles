@@ -8,7 +8,9 @@ const RunCarouselFix = function () {
         const nav = section.querySelector('.owl-nav');
         const imgs = [...section.querySelectorAll('img')].filter(img => img.hasAttribute('data-src'));
         nav.addEventListener('click', () => {
-            window.scrollBy(0,1);
+            setTimeout(() => {
+                window.scrollBy(0,0.1);
+            }, 200);
             // console.log(imgs);
             imgs.some((el, i, array) => {
                 if (el.src === el.getAttribute('data-src')) {
@@ -48,4 +50,5 @@ window.addEventListener('load', () => {
     console.log('Added scroll by');
     console.log('Updated src');
     console.log('Console out');
+    console.log('Changed scroll');
 });
