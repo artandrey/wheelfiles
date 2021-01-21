@@ -212,6 +212,11 @@ https.createServer(options, (req, res) => {
             res.end('Invalid code');
             return;
         }
+        if (data.code !== code) {
+            res.statusCode = 400;
+            res.end('Invalid code');
+            return;
+        }
         const date = new Date();
         const optionIndex = random(wheelOptions.length-1);
         transporter.sendMail({
