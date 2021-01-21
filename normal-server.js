@@ -7,6 +7,7 @@ const wheelOptions = config.wheelOptions;
 const PORT = 8080;
 const validator = require('validator');
 var phoneCollection = null;
+const smsArray = {};
 
 //connectiong to db hehe
 
@@ -111,36 +112,50 @@ https.createServer(options, (req, res) => {
                                 ));
                                 return;
                             }   
-                            res.statusCode = 200;
-                            res.end(JSON.stringify(
-                                {
-                                    optionIndex: optionIndex,
-                                    optionName: wheelOptions[optionIndex]
-                                }
-                            ));
+                            
                             phoneCollection.insertOne({
                                 optionIndex: optionIndex,
                                 optionName: wheelOptions[optionIndex],
                                 phone: data.phone
                             });
-                            const date = new Date();
-                            transporter.sendMail({
-                                from: 'Заявка с колеса с сайта ' + data.url,
-                                to: config["YOUR-EMAIL"],
-                                subject: "Заявка с колеса с сайта " + data.url,
-                                text: "Пользователь ввёл свой номер",
-                                html: ` <i>Номер:</i> <strong>${data.phone}</strong>.
-                                        <br/>
-                                        <i>Подарок:</i> <strong>${wheelOptions[optionIndex]}</strong>.
-                                        <br/>
-                                        <i>Время:</i> <strong>${date.toLocaleDateString() + ' ' + date.toLocaleTimeString()}</strong>.
-                                `,
-                            }, (err, data) => {
-                                console.log(err);
-                            });
-    
-                        
-                        console.log('SENDED EMAIL!!!!');
+
+                            if (!data.sms) {
+                                    
+                                res.statusCode = 200;
+                                res.end(JSON.stringify(
+                                    {
+                                        optionIndex: optionIndex,
+                                        optionName: wheelOptions[optionIndex]
+                                    }
+                                ));
+                                const date = new Date();
+                                transporter.sendMail({
+                                    from: 'Заявка с колеса с сайта ' + data.url,
+                                    to: config["YOUR-EMAIL"],
+                                    subject: "Заявка с колеса с сайта " + data.url,
+                                    text: "Пользователь ввёл свой номер",
+                                    html: ` <i>Номер:</i> <strong>${data.phone}</strong>.
+                                            <br/>
+                                            <i>Подарок:</i> <strong>${wheelOptions[optionIndex]}</strong>.
+                                            <br/>
+                                            <i>Время:</i> <strong>${date.toLocaleDateString() + ' ' + date.toLocaleTimeString()}</strong>.
+                                    `,
+                                }, (err, data) => {
+                                    console.log(err);
+                                });
+        
+                            
+                            console.log('SENDED EMAIL!!!!');
+                            }
+                            else {
+                                console.log('Add sms');
+                                const code = Math.floor(getRandomArbitrary(10000, 99999)) + '';
+                                smsArray[data.phone] = code;
+                                console.log(code);
+                                fetch(`https://smsc.ru/sys/send.php?login=${config.sms.login}&psw=${config.sms.password}&phones=${data.phone}&mes=Ваш код:${code}`);
+                                res.end(JSON.stringify({type: 'Success!'}));
+                            }
+                            
                         });
 
                     }
@@ -156,13 +171,84 @@ https.createServer(options, (req, res) => {
             res.end('Bad request')
         }
     }
-    else {
-        res.statusCode = 404;
-        res.end('There is nothing here');
-    }
+    else if (req.url === '/wheel/sms-init') {
+        if (req.method !== 'POST') {
+            res.end('Must be POST');
+            return;
+        }
+        var buffer = '';
+            req.on('data', chunk => {
+                buffer += chunk;
+                if (buffer.length > 1e6) { 
+                    // FLOOD ATTACK OR FAULTY CLIENT, NUKE REQUEST
+                    req.connection.destroy();
+                }
+            });
+            req.on('end', () => {
 
-}).listen(PORT);
 
-const random = function (max) {
+
+
+
+                let data;
+                try {
+                    data = JSON.parse(buffer);
+                    console.log(data);
+                }
+                catch(e) {
+            console.log(e);
+            res.statusCode = 403;
+            res.end('Bad request');
+            return;
+        }
+        if (!data.phone && !data.code) {
+            res.statusCode = 403;   
+            res.end('Phone not sended');
+            return;
+        }
+        const code = smsArray[data.phone];
+        if (!code) {
+            res.statusCode = 400;
+            res.end('Invalid code');
+            return;
+        }
+        const date = new Date();
+        const optionIndex = random(wheelOptions.length-1);
+        transporter.sendMail({
+            from: 'Заявка с колеса с сайта ' + data.url,
+            to: config["YOUR-EMAIL"],
+            subject: "Заявка с колеса с сайта " + data.url,
+            text: "Пользователь ввёл свой номер",
+            html: ` <i>Номер:</i> <strong>${data.phone}</strong>.
+            <br/>
+            <i>Подарок:</i> <strong>${wheelOptions[optionIndex]}</strong>.
+                    <br/>
+                    <i>Время:</i> <strong>${date.toLocaleDateString() + ' ' + date.toLocaleTimeString()}</strong>.
+                    `,
+        }, (err, data) => {
+            console.log(err);
+        });
+
+        res.statusCode = 200;
+        res.end(JSON.stringify(
+            {
+                optionIndex: optionIndex,
+                optionName: wheelOptions[optionIndex]
+            }
+            ));
+        });
+            
+        }
+        else {
+            console.log(req.url);
+            res.statusCode = 404;
+            res.end('There is nothing here');
+        }
+    }).listen(PORT);
+    
+    const random = function (max) {
     return Math.floor(Math.random() * (max + 1));
+}
+const getRandomArbitrary = function (min, max) {
+    return Math.random() * (max - min) + min;
 }

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/artandrey/wheelfiles#readme",
   "dependencies": {
     "mongodb": "^3.6.3",
-    "nodemailer": "^6.4.17"
+    "nodemailer": "^6.4.17",
+    "validator": "^13.5.2"
   }
 }
