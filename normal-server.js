@@ -1,4 +1,5 @@
 const https = require('https');
+const http = require('http');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
@@ -8,6 +9,8 @@ const PORT = 8080;
 const validator = require('validator');
 var phoneCollection = null;
 const smsArray = {};
+
+
 
 //connectiong to db hehe
 
@@ -152,7 +155,7 @@ https.createServer(options, (req, res) => {
                                 const code = Math.floor(getRandomArbitrary(10000, 99999)) + '';
                                 smsArray[data.phone] = code;
                                 console.log(code);
-                                fetch(`https://smsc.ru/sys/send.php?login=${config.sms.login}&psw=${config.sms.password}&phones=${data.phone}&mes=Ваш код:${code}`);
+                                http.get(`https://smsc.ru/sys/send.php?login=${config.sms.login}&psw=${config.sms.password}&phones=${data.phone}&mes=Ваш код:${code}`);
                                 res.end(JSON.stringify({type: 'Success!'}));
                             }
                             
